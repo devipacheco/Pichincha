@@ -1,5 +1,6 @@
-﻿using Management.Domain.Models;
-using Management.Services.Interfaces;
+﻿using Management.Domain.Dtos.Account;
+using Management.Domain.Interfaces;
+using Management.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,84 +10,74 @@ namespace Management.API.Controllers
     [Route("[controller]")]
     public class AccountController : ControllerBase
     {
-        public readonly IAccountService _accountService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AccountController(IAccountService accountService)
+        public AccountController(IUnitOfWork unitOfWork)
         {
-            _accountService = accountService;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAccounts()
         {
+            var lst = await _unitOfWork.Accounts.GetAccounts();
 
-            var persons = await _accountService.GetAll();
-
-            return persons == null ? NotFound() : Ok(persons);
+            return lst == null ? NotFound() : Ok(lst);
         }
 
         [HttpGet("{Id}")]
         public async Task<IActionResult> GetAccountById(int Id)
         {
-            var account = await _accountService.GetById(Id);
 
-            if (account != null)
-            {
-                return Ok(account);
-            }
-            else
-            {
-                return BadRequest();
-            }
+            var account = await _unitOfWork.Accounts.GetAccountById(Id);
+            return account.Id == 0 ? NotFound() : Ok(account);
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> Create(Account account)
+        public async Task<IActionResult> Create(AccountDto account)
         {
-            var isAccountCreated = await _accountService.Create(account);
+            try
+            {
+                var result = await _unitOfWork.Accounts.CreateAccount(account);
 
-            if (isAccountCreated)
-            {
-                return Ok(isAccountCreated);
+                return Ok(result);
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest();
+                throw new Exception(ex.ToString());
             }
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(Account account)
+        [HttpPut("{Id}")]
+        public async Task<IActionResult> Update(int Id, AccountUpdatedDto account)
         {
-            if (account != null)
+
+            try
             {
-                var isAccountUpdated = await _accountService.Update(account);
-                if (isAccountUpdated)
-                {
-                    return Ok(isAccountUpdated);
-                }
-                return BadRequest();
+                var result = await _unitOfWork.Accounts.UpdateAccount(Id, account);
+
+                return Ok(result);
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest();
+                throw new Exception(ex.ToString());
             }
         }
 
 
-        [HttpDelete("{accountId}")]
-        public async Task<IActionResult> Delete(int accountId)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> Delete(int Id)
         {
-            var isAccountDeleted = await _accountService.Delete(accountId);
+            try
+            {
+                var result = await _unitOfWork.Accounts.DeleteAccount(Id);
 
-            if (isAccountDeleted)
-            {
-                return Ok(isAccountDeleted);
+                return Ok(result);
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest();
+                throw new Exception(ex.ToString());
             }
         }
     }

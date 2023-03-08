@@ -4023,11 +4023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
       "projectName": "Management.Domain",
-      "projectPath": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+      "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
       "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\ManagementProject\\Management.Domain\\obj\\",
+      "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

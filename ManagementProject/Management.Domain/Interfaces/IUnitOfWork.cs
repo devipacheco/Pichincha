@@ -13,6 +13,6 @@ namespace Management.Domain.Interfaces
         IAccountRepository Accounts { get; }
         IMovementRepository Movements { get; }
 
-        int Save();
+        //int Save();
     }
 }

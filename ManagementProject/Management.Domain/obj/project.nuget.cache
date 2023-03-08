@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FDv8EVVXAY6wc/gpStpamf41fYi0xxE37o3xqkPjYN7yH6B0QqTTmcSCgGrSSffZ7ULuIzUOlMsCvD9bzdmvfg==",
+  "dgSpecHash": "lR3GJi+RjSDQr8467R6LR5HdE17WJQHkhzGqFtrHhnkiezysxmwAvrPg1xChzieXxn+AyOphYBbx3Yr6DaGNuQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+  "projectFilePath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

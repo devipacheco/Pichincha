@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using FluentValidation;
-using Management.API.Dtos;
 using Management.API.Dtos.Response;
+using Management.Domain.Dtos.Client;
 using Management.Domain.Interfaces;
 using Management.Domain.Models;
+using Management.Domain.Others.Result;
 using Management.Infraestructure.Repositories;
-using Management.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -36,94 +36,53 @@ namespace Management.API.Controllers
         public async Task<IActionResult> GetClientById(int Id)
         {
             var client = await _unitOfWork.Clients.GetClientById(Id);
-            return client == null ? NotFound() : Ok(client);
+            return client.Id == 0 ? NotFound() : Ok(client);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(ClientDto client)
+        public async Task<ActionResult<ResultadoAccion>> Create(ClientDto client)
         {
-            return BadRequest();
-            //var result = await _validator.ValidateAsync(client);
+            try
+            {
+                var result = await _unitOfWork.Clients.CreateClient(client);
 
-            //if (!result.IsValid)
-            //{
-            //    return BadRequest(result);
-            //}
-
-            //var clientToInsert = _mapper.Map<ClientDto, Client>(client);
-
-            //// Person
-            //var _person = new Person()
-            //{
-            //    Name = client.Names,
-            //    Address = client.Address,
-            //    Phone = client.Phone,
-            //};
-
-            //var personCreated = await _personService.Create(_person);
-
-            //if(personCreated) clientToInsert.PersonId = _person.Id;
-            //else return BadRequest("Error al crear la persona.");
-
-            //var isclientCreated = await _clientService.Create(ClientDto);
-
-            //if (isclientCreated)
-            //{
-            //    return Ok("Se agrego el cliente correctamente");
-            //}
-            //else
-            //{
-            //    return BadRequest();
-            //}
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
         }
 
-        [HttpPut("clientId")]
-        public async Task<IActionResult> Update(int clientId, ClientUpdatedDto client)
+        [HttpPut("{Id}")]
+        public async Task<IActionResult> Update(int Id, ClientUpdatedDto client)
         {
-            //if (client != null)
-            //{
-            //    //var result = await _validator.ValidateAsync(client);
+            try
+            {
+                var result = await _unitOfWork.Clients.UpdateCliente(Id, client);
 
-            //    //if (!result.IsValid)
-            //    //{
-            //    //    return BadRequest(result);
-            //    //}
-            //    var clientToUpdate = _mapper.Map<ClientUpdatedDto, Client>(client);
-            //    clientToUpdate.Id = clientId;
-
-            //    clientToUpdate.Person.Name = client.Name;
-            //    clientToUpdate.Person.Address = client.Address;
-            //    clientToUpdate.Person.Phone = client.Phone;
-
-            //    var isClientUpdated = await _clientService.Update(clientToUpdate);
-            //    if (isClientUpdated)
-            //    {
-            //        return Ok(isClientUpdated);
-            //    }
-            //    return BadRequest();
-            //}
-            //else
-            //{
-            //    return BadRequest();
-            //}
-            return BadRequest();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
         }
 
 
-        [HttpDelete("clientId")]
-        public async Task<IActionResult> Delete(int clientId)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> Delete(int Id)
         {
-            //var isClientDeleted = await _clientService.Delete(clientId);
+            try
+            {
+                var result = await _unitOfWork.Clients.DeleteCliente(Id);
 
-            //if (isClientDeleted)
-            //{
-            //    return Ok(isClientDeleted);
-            //}
-            //else
-            //{
-            //    return BadRequest();
-            //}
-            return BadRequest();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
 
         }
     }

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Management.API.Dtos
+namespace Management.Domain.Dtos.Client
 {
     public class ClientUpdatedDto
     {
@@ -9,6 +9,7 @@ namespace Management.API.Dtos
         public int Age { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
+        public string Identification { get; set; }
         public string Password { get; set; }
         public bool Status { get; set; }
     }

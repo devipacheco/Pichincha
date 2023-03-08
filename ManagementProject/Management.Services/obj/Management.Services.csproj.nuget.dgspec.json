@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ManagementProject\\Management.Services\\Management.Services.csproj": {}
+    "D:\\Projects\\Pichincha\\ManagementProject\\Management.Services\\Management.Services.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
+    "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
         "projectName": "Management.Domain",
-        "projectPath": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
         "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ManagementProject\\Management.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,14 +91,14 @@
         }
       }
     },
-    "D:\\Projects\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
+    "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
+        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
         "projectName": "Management.Infraestructure",
-        "projectPath": "D:\\Projects\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
+        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ManagementProject\\Management.Infraestructure\\obj\\",
+        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -119,8 +119,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
-                "projectPath": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj"
+              "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj"
               }
             }
           }
@@ -138,10 +138,6 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
-            },
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.9, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -192,14 +188,14 @@
         }
       }
     },
-    "D:\\Projects\\ManagementProject\\Management.Services\\Management.Services.csproj": {
+    "D:\\Projects\\Pichincha\\ManagementProject\\Management.Services\\Management.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ManagementProject\\Management.Services\\Management.Services.csproj",
+        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Services\\Management.Services.csproj",
         "projectName": "Management.Services",
-        "projectPath": "D:\\Projects\\ManagementProject\\Management.Services\\Management.Services.csproj",
+        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Services\\Management.Services.csproj",
         "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ManagementProject\\Management.Services\\obj\\",
+        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -220,11 +216,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
-                "projectPath": "D:\\Projects\\ManagementProject\\Management.Domain\\Management.Domain.csproj"
+              "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj"
               },
-              "D:\\Projects\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
-                "projectPath": "D:\\Projects\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj"
+              "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
+                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj"
               }
             }
           }

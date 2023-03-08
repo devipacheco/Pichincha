@@ -1,4 +1,5 @@
 ﻿using Management.Domain.Interfaces;
+using Management.Domain.Others.Result;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -19,14 +20,18 @@ namespace Management.Infraestructure.Repositories
 
         }
 
-        public async Task Add(T entity)
+        public async Task<ResultadoAccion> Add(T entity)
         {
             await _dbContext.Set<T>().AddAsync(entity);
+            bool guardado = Guadar();
+            return new ResultadoAccion(guardado, guardado ? "Se agregado correctamente." : "Error al agregar.");
         }
 
-        public void Delete(T entity)
+        public ResultadoAccion Delete(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
+            bool guardado = Guadar();
+            return new ResultadoAccion(guardado, guardado ? "Se agregado correctamente." : "Error al agregar.");
         }
 
         //public async Task<IEnumerable<T>> GetAll(List<string> includes)
@@ -66,9 +71,16 @@ namespace Management.Infraestructure.Repositories
         //    return model;
         //}
 
-        public async void Update(T entity)
+        public ResultadoAccion Update(T entity)
         {
             _dbContext.Set<T>().Update(entity);
+            bool guardado = Guadar();
+            return new ResultadoAccion(guardado, guardado ? "Actualizado correctamente." : "Error al actualizar.");
+        }
+
+        public bool Guadar()
+        {
+            return _dbContext.SaveChanges() >= 0;
         }
     }
 }

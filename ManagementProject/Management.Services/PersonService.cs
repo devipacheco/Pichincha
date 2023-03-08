@@ -20,36 +20,36 @@ namespace Management.Services
 
         public async Task<bool> Create(Person person)
         {
-            if (person != null)
-            {
-                await _unitOfWork.Persons.Add(person);
+            //if (person != null)
+            //{
+            //    await _unitOfWork.Persons.Add(person);
 
-                var result = _unitOfWork.Save();
+            //    var result = _unitOfWork.Save();
 
-                if (result > 0)
-                    return true;
-                else
-                    return false;
-            }
+            //    if (result > 0)
+            //        return true;
+            //    else
+            //        return false;
+            //}
             return false;
         }
 
         public async Task<bool> Delete(int personId)
         {
-            if (personId > 0)
-            {
-                var productDetails = await _unitOfWork.Persons.GetById(personId);
-                if (productDetails != null)
-                {
-                    _unitOfWork.Persons.Delete(productDetails);
-                    var result = _unitOfWork.Save();
+            //if (personId > 0)
+            //{
+            //    var productDetails = await _unitOfWork.Persons.GetById(personId);
+            //    if (productDetails != null)
+            //    {
+            //        _unitOfWork.Persons.Delete(productDetails);
+            //        var result = _unitOfWork.Save();
 
-                    if (result > 0)
-                        return true;
-                    else
-                        return false;
-                }
-            }
+            //        if (result > 0)
+            //            return true;
+            //        else
+            //            return false;
+            //    }
+            //}
             return false;
         }
 
@@ -83,25 +83,25 @@ namespace Management.Services
 
         public async Task<bool> Update(Person person)
         {
-            if (person != null)
-            {
-                var _person = await _unitOfWork.Persons.GetById(person.Id);
-                if (_person != null)
-                {
-                    _person.Name = person.Name;
-                    _person.Address = person.Address;
-                    _person.Genre = person.Genre;
+            //if (person != null)
+            //{
+            //    var _person = await _unitOfWork.Persons.GetById(person.Id);
+            //    if (_person != null)
+            //    {
+            //        _person.Name = person.Name;
+            //        _person.Address = person.Address;
+            //        _person.Genre = person.Genre;
 
-                    _unitOfWork.Persons.Update(_person);
+            //        _unitOfWork.Persons.Update(_person);
 
-                    var result = _unitOfWork.Save();
+            //        var result = _unitOfWork.Save();
 
-                    if (result > 0)
-                        return true;
-                    else
-                        return false;
-                }
-            }
+            //        if (result > 0)
+            //            return true;
+            //        else
+            //            return false;
+            //    }
+            //}
             return false;
         }
     }
