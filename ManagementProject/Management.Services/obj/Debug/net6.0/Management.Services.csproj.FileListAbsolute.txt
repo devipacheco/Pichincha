@@ -1,0 +1,17 @@
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Services.deps.json
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Services.dll
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Services.pdb
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.csproj.AssemblyReference.cache
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.AssemblyInfoInputs.cache
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.AssemblyInfo.cs
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.csproj.CoreCompileInputs.cache
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.dll
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\refint\Management.Services.dll
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.pdb
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\ref\Management.Services.dll
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Domain.dll
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Domain.pdb
+D:\Projects\ManagementProject\Management.Services\obj\Debug\net6.0\Management.Services.csproj.CopyComplete
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Infraestructure.dll
+D:\Projects\ManagementProject\Management.Services\bin\Debug\net6.0\Management.Infraestructure.pdb

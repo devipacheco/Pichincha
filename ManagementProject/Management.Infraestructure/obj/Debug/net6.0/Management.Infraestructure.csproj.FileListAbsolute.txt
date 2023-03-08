@@ -1,0 +1,17 @@
+D:\Projects\ManagementProject\Management.Infraestructure\bin\Debug\net6.0\Management.Infraestructure.deps.json
+D:\Projects\ManagementProject\Management.Infraestructure\bin\Debug\net6.0\Management.Infraestructure.runtimeconfig.json
+D:\Projects\ManagementProject\Management.Infraestructure\bin\Debug\net6.0\Management.Infraestructure.dll
+D:\Projects\ManagementProject\Management.Infraestructure\bin\Debug\net6.0\Management.Infraestructure.pdb
+D:\Projects\ManagementProject\Management.Infraestructure\bin\Debug\net6.0\Management.Domain.dll
+D:\Projects\ManagementProject\Management.Infraestructure\bin\Debug\net6.0\Management.Domain.pdb
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.csproj.AssemblyReference.cache
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.AssemblyInfoInputs.cache
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.AssemblyInfo.cs
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.csproj.CoreCompileInputs.cache
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.csproj.CopyComplete
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.dll
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\refint\Management.Infraestructure.dll
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.pdb
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\Management.Infraestructure.genruntimeconfig.cache
+D:\Projects\ManagementProject\Management.Infraestructure\obj\Debug\net6.0\ref\Management.Infraestructure.dll
