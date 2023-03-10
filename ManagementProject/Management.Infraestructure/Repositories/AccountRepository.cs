@@ -51,7 +51,7 @@ namespace Management.Infraestructure.Repositories
                 var _account = new Account()
                 {
                     ClientId = account.ClientId,
-                    Balance = account.Balance,
+                    InitialBalance = account.Balance,
                     Number = account.Number,
                     Type = account.Type,
                     CreatedBy = "UserCurrentLoggued",
@@ -67,9 +67,20 @@ namespace Management.Infraestructure.Repositories
             }
         }
 
-        public Task<ActionResult<ResultadoAccion>> DeleteAccount(int Id)
+        public async Task<ActionResult<ResultadoAccion>> DeleteAccount(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var _account = await _dbContext.Accounts.FirstOrDefaultAsync(x => x.Id == Id);
+
+                _account.Status = false;
+
+                return Update(_account);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<AccountResponseDto> GetAccountById(int clientId)
@@ -81,7 +92,7 @@ namespace Management.Infraestructure.Repositories
 
         public async Task<List<AccountResponseDto>> GetAccounts()
         {
-            var accounts = await _dbContext.Accounts.Include(x => x.Client).ToListAsync();
+            var accounts = await _dbContext.Accounts.Include(x => x.Client).Where(x => x.Status).ToListAsync();
             var accountsMapper = _mapper.Map<List<Account>, List<AccountResponseDto>>(accounts);
 
             return accountsMapper;
@@ -98,16 +109,13 @@ namespace Management.Infraestructure.Repositories
                     return new ResultadoAccion(false, result.ToString());
                 }
 
-                //var clientToUpdate = _mapper.Map<ClientUpdatedDto, Client>(clientUpdated);
                 var _accountUpdated = _dbContext.Accounts.FirstOrDefault(x => x.Id == Id);
 
                 _accountUpdated.UpdatedDate = DateTime.Now;
-                _accountUpdated.Balance = accountUpdated.Balance;
+                _accountUpdated.InitialBalance = accountUpdated.Balance;
                 _accountUpdated.UpdatedBy = "UserLoggued";
+                _accountUpdated.Number = accountUpdated.Number;
 
-                //var resultado = await _dbContext.Persons.Update(_person);
-
-                //var personUpdated = _dbContext.Persons.FirstOrDefault(x => x.Id);
 
                 return Update(_accountUpdated);
             }

@@ -23,7 +23,6 @@ namespace Management.Domain.Dtos.Account
             {
                 RuleFor(x => x.Number).NotEmpty();
                 RuleFor(x => x.Type).NotEmpty();
-                RuleFor(x => x.Balance).NotEmpty();
                 RuleFor(x => x.ClientId).NotEmpty().NotEqual(0);
             }
         }

@@ -14,11 +14,13 @@ namespace Management.Domain.Interfaces
 {
     public interface IMovementRepository : IRepository<Movement>
     {
-        Task<ActionResult<List<MovementResponseDto>>> GetMovements();
-        Task<ActionResult<List<MovementResponseDto>>> GetMovementsByClientAndDates(int Id, DateTime start, DateTime end);
-        Task<MovementResponseDto> GetMovementById(int clientId);
-        Task<ActionResult<ResultadoAccion>> CreateMovement(MovementDto client);
-        Task<ActionResult<ResultadoAccion>> UpdateMovement(int Id, MovementUpdatedDto client);
+        Task<List<MovementResponseDto>> GetMovements();
+        Task<List<MovementResponseDto>> GetMovementsByClientAndDates(int Id, DateTime start, DateTime end);
+        Task<List<MovementResponseDto>> GetMovementsByDates(DateTime start, DateTime end);
+        Task<MovementResponseDto> GetMovementById(int Id);
+        Task<List<MovementResponseDto>> GetMovementsByClientId(int clientId);
+        Task<ActionResult<ResultadoAccion>> CreateMovement(MovementDto mov);
+        Task<ActionResult<ResultadoAccion>> UpdateMovement(int Id, MovementUpdatedDto mov);
         Task<ActionResult<ResultadoAccion>> DeleteMovement(int Id);
     }
 }

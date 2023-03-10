@@ -30,9 +30,6 @@ namespace Management.Infraestructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("Balance")
-                        .HasColumnType("float");
-
                     b.Property<int>("ClientId")
                         .HasColumnType("int");
 
@@ -42,6 +39,9 @@ namespace Management.Infraestructure.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<double>("InitialBalance")
+                        .HasColumnType("float");
 
                     b.Property<int>("Number")
                         .HasColumnType("int");
@@ -102,9 +102,8 @@ namespace Management.Infraestructure.Migrations
                     b.Property<int>("AccountId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Action")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ActionId")
+                        .HasColumnType("int");
 
                     b.Property<double>("Balance")
                         .HasColumnType("float");
@@ -116,8 +115,15 @@ namespace Management.Infraestructure.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Import")
                         .HasColumnType("float");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
@@ -129,7 +135,38 @@ namespace Management.Infraestructure.Migrations
 
                     b.HasIndex("AccountId");
 
+                    b.HasIndex("ActionId");
+
                     b.ToTable("Movements");
+                });
+
+            modelBuilder.Entity("Management.Domain.Models.MovementType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MovementTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Credito"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Debito"
+                        });
                 });
 
             modelBuilder.Entity("Management.Domain.Models.Person", b =>
@@ -196,7 +233,15 @@ namespace Management.Infraestructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Management.Domain.Models.MovementType", "Action")
+                        .WithMany()
+                        .HasForeignKey("ActionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Account");
+
+                    b.Navigation("Action");
                 });
 #pragma warning restore 612, 618
         }

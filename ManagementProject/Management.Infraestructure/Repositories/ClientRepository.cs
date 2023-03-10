@@ -55,7 +55,7 @@ namespace Management.Infraestructure.Repositories
                 var personCreated = _dbContext.SaveChanges();
 
                 if (personCreated >= 0) clientToInsert.PersonId = _person.Id;
-                else return new ResultadoAccion(false, "Error al crear la persona.", 0);
+                else return new ResultadoAccion(false, "Error al crear la persona.");
 
                 return await Add(clientToInsert);
             }

@@ -9,7 +9,7 @@ namespace Management.Domain.Dtos.Account
 {
     public class AccountUpdatedDto
     {
-        public string Number { get; set; }
+        public int Number { get; set; }
         public string Type { get; set; }
         public double Balance { get; set; }
         public bool Status { get; set; }

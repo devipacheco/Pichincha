@@ -1,6 +1,7 @@
 ﻿using Management.Domain.Dtos.Account;
 using Management.Domain.Interfaces;
 using Management.Domain.Models;
+using Management.Domain.Others.Result;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,12 +31,12 @@ namespace Management.API.Controllers
         {
 
             var account = await _unitOfWork.Accounts.GetAccountById(Id);
-            return account.Id == 0 ? NotFound() : Ok(account);
+            return account == null || account.Id == 0 ? NotFound() : Ok(account);
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> Create(AccountDto account)
+        public async Task<ActionResult<ResultadoAccion>> Create(AccountDto account)
         {
             try
             {

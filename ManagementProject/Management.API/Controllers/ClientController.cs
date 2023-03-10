@@ -1,15 +1,7 @@
-﻿using AutoMapper;
-using FluentValidation;
-using Management.API.Dtos.Response;
-using Management.Domain.Dtos.Client;
+﻿using Management.Domain.Dtos.Client;
 using Management.Domain.Interfaces;
-using Management.Domain.Models;
 using Management.Domain.Others.Result;
-using Management.Infraestructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace Management.API.Controllers
 {
@@ -36,7 +28,7 @@ namespace Management.API.Controllers
         public async Task<IActionResult> GetClientById(int Id)
         {
             var client = await _unitOfWork.Clients.GetClientById(Id);
-            return client.Id == 0 ? NotFound() : Ok(client);
+            return client ==  null || client.Id == 0 ? NotFound() : Ok(client);
         }
 
         [HttpPost]

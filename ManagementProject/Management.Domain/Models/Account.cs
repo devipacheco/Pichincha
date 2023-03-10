@@ -14,7 +14,7 @@ namespace Management.Domain.Models
         public int Id { get; set; }
         public int Number { get; set; }
         public string Type { get; set; }
-        public double Balance { get; set; }
+        public double InitialBalance { get; set; }
         public bool Status { get; set; }
         public DateTime CreatedDate { get; set; }
         public string CreatedBy { get; set; }
