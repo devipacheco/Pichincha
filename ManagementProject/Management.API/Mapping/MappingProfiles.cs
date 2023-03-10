@@ -24,7 +24,8 @@ namespace Management.API
 
             CreateMap<AccountDto, Account>();
             CreateMap<AccountUpdatedDto, Account>();
-            CreateMap<Account, AccountResponseDto>();
+            CreateMap<Account, AccountResponseDto>()
+                .ForMember(dest => dest.Balance, act => act.MapFrom(act => act.InitialBalance)); ;
 
             CreateMap<MovementDto, Movement>()
                     .ForMember(dest => dest.ActionId, act => act.MapFrom(or => or.MovementType));
