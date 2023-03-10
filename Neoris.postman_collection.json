@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "e4937cd0-49c1-4ec4-b24e-57f039488e4c",
+		"name": "Neoris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8309287"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Names\": \"Juan Osorio\",\r\n  \"Address\": \"13 junio y Equinoccial\",\r\n  \"Phone\": \"098874587\",\r\n  \"Password\": \"1245\",\r\n  \"Status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/Client",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_Base}}/Client",
+							"host": [
+								"{{URL_Base}}"
+							],
+							"path": [
+								"Client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Client/4",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Client",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jose Lema\",\r\n  \"genre\": \"H\",\r\n  \"age\": 30,\r\n  \"address\": \"Otavalo sn y principal\",\r\n  \"phone\": \"098254785\",\r\n  \"identification\": \"IFE\",\r\n  \"password\": \"1234\",\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/Client/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_Base}}/Client/7",
+							"host": [
+								"{{URL_Base}}"
+							],
+							"path": [
+								"Client",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "GetAccounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Account",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAccountById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Account/2",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Account",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"number\": 585545,\r\n  \"type\": \"Corriente\",\r\n  \"balance\": 1000,\r\n  \"status\": true,\r\n  \"clientId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/Account",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Account/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Account",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Account/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Account",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movement",
+			"item": [
+				{
+					"name": "GetMovements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Movement",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accountId\": 1,\r\n  \"movementType\": 2,\r\n  \"import\": 575,\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/Movement",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMovementById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Movement/3",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_BASE}}/Movement/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Movement/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByClientId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Movement/GetByClientId/1",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement",
+								"GetByClientId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReportByDates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Movement/ReportsByDates?startDate=03/09/2023&endDate=03/09/2023",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement",
+								"ReportsByDates"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "03/09/2023"
+								},
+								{
+									"key": "endDate",
+									"value": "03/09/2023"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReportByClientAndDates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_BASE}}/Movement/ReportByClientAndDates?clientId=1&startDate=03/09/2023&endDate=03/09/2023",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"Movement",
+								"ReportByClientAndDates"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "1"
+								},
+								{
+									"key": "startDate",
+									"value": "03/09/2023"
+								},
+								{
+									"key": "endDate",
+									"value": "03/09/2023"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL_BASE",
+			"value": "https://192.168.100.106:32768",
+			"type": "string"
+		},
+		{
+			"value": "",
+			"type": "string"
+		}
+	]
+}
