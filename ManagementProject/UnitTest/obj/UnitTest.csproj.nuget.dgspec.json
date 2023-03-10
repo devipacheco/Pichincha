@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj": {}
+    "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj": {
+    "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj",
+        "projectUniqueName": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj",
         "projectName": "Management.API",
-        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj",
-        "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.API\\obj\\",
+        "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj",
+        "packagesPath": "C:\\Users\\virgilio.pacheco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Antonio Pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\virgilio.pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
-                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj"
+              "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj"
               }
             }
           }
@@ -82,24 +82,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -112,20 +94,20 @@
         }
       }
     },
-    "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
+    "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
         "projectName": "Management.Domain",
-        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
-        "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\obj\\",
+        "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj",
+        "packagesPath": "C:\\Users\\virgilio.pacheco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Antonio Pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\virgilio.pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -176,20 +158,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -199,20 +167,20 @@
         }
       }
     },
-    "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
+    "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
         "projectName": "Management.Infraestructure",
-        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\virgilio.pacheco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Antonio Pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\virgilio.pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -227,8 +195,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj"
+              "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj": {
+                "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Domain\\Management.Domain.csproj"
               }
             }
           }
@@ -273,20 +241,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -296,20 +250,20 @@
         }
       }
     },
-    "D:\\Projects\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj": {
+    "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj",
         "projectName": "UnitTest",
-        "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj",
-        "packagesPath": "C:\\Users\\Antonio Pacheco\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Pichincha\\ManagementProject\\UnitTest\\obj\\",
+        "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\UnitTest\\UnitTest.csproj",
+        "packagesPath": "C:\\Users\\virgilio.pacheco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Antonio Pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\virgilio.pacheco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -324,11 +278,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj": {
-                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj"
+              "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj": {
+                "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.API\\Management.API.csproj"
               },
-              "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
-                "projectPath": "D:\\Projects\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj"
+              "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\virgilio.pacheco\\OneDrive - NEORIS\\Documents\\Proyectos\\Pichincha\\ManagementProject\\Management.Infraestructure\\Management.Infraestructure.csproj"
               }
             }
           }
@@ -383,20 +337,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
